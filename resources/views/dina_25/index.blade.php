@@ -54,7 +54,7 @@
         <td>{{ $laptop ->penyimpanan }}</td>
         <td>{{ $laptop ->os }}</td>
         <td>
-            <form action="{{ route('laptop.destroy',['mahasiswa',$laptop->id]) }}" method="POST">
+            <form action="{{ route('laptop.destroy',$laptop->id) }}" method="POST">
                 <a class="btn btn-info" href="{{ route('laptop.show',$laptop->id) }}">Show</a>
                 <a class="btn btn-primary" href="{{ route('laptop.edit',$laptop->id) }}">Edit</a>
                 @csrf

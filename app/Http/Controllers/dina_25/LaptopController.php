@@ -98,7 +98,7 @@ Class LaptopController extends Controller
     {
        //fungsi eloquent untuk menghapus data
        Laptop::find($id)->delete();
-       return redirect()->route('mahasiswa.index')
+       return redirect()->route('laptop.index')
        -> with('success', 'Data Laptop Berhasil Dihapus');   
     }
 
