@@ -4,8 +4,8 @@
 
     Catatan, lengkapi data diri anda berikut ini
     
-    NIM     : 
-    Nama    : 
+    NIM     : 2041720182
+    Nama    : Muhammad ALi Reza
     Kelas   : TI 2F
     Nama sesuai folder controller : 
     
@@ -15,5 +15,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\SepatuController;
+
+Route::resource('sepatu', SepatuController::class);
 
 // silahkan tulis code router dibawah ini 

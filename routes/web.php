@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LemariEsController;
+use App\Http\Controllers\SepatuController;
 use Illuminate\Http\Request;
+
+
 
 /*
 |--------------------------------------------------------------------------
