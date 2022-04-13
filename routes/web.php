@@ -1,8 +1,8 @@
 <?php
-
+use App\Http\Controllers\aditya_24\LemariEsController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LemariEsController;
 use Illuminate\Http\Request;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,3 +14,4 @@ use Illuminate\Http\Request;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::resource('webnya', LemariEsController::class);
