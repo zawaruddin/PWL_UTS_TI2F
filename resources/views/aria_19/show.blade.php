@@ -16,7 +16,7 @@
                 <h1>Detail Data</h1>
             </div>
             <div class="my-3 text-center">
-                <a class="btn btn-info" href="{{ url("dashboard") }}">Kembali ke My Posts Page</a>
+                <a class="btn btn-info" href="{{ url("dashboard") }}">Kembali ke Dashboard</a>
                 <a class="btn btn-warning mx-3" href="{{ url("dashboard/$datadetail->id/edit") }}">Edit Data</a>
                 <form action="{{ url("dashboard/$datadetail->id") }}" class="d-inline" method="post">
                     @csrf

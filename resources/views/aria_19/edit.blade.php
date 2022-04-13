@@ -14,9 +14,9 @@
         <div class="container">
             <h2 class="mt-3">Update data</h2>
             <div class="col-lg-8 mb-5">
-                <form action="{{ url("dashboard") }}" method="post" >
+                <form action="{{ url("dashboard/$datadetail->id") }}" method="post" >
                     @csrf
-                    @method("PUT")
+                    @method("put")
                     <div class="mb-3">
                         <label for="nama" class="form-label">Nama</label>
                         <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" id="nama" value="{{ old("nama", $datadetail->nama) }}" required autofocus>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="desc" class="form-label">Deskripsi</label>
-                        <input type="text" name="desc" class="form-control @error('desc') is-invalid @enderror" id="desc" value="{{ old("desc",  $datadetail->harga) }}" required>
+                        <input type="text" name="desc" class="form-control @error('desc') is-invalid @enderror" id="desc" value="{{ old("desc",  $datadetail->desc) }}" required>
                         @error('desc')
                             <div class="invalid-feedback">
                                 {{ $message }}

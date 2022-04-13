@@ -9,5 +9,11 @@ class AksesorisPakaian extends Model
 {
     use HasFactory;
     protected $table = "aksesoris_pakaians";
-    protected $guarded = "id";
+    protected $fillable = [
+        "nama",
+        "warna",
+        "desc",
+        "harga",
+    ];
+    protected $guarded = ["id"];
 }

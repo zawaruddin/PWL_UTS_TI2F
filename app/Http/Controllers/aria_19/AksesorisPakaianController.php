@@ -20,7 +20,7 @@ class AksesorisPakaianController extends Controller
         return view("aria_19.create");
     }
 
-    public function store(Request $request)
+    public function store (Request $request)
     {
         $validatedData = $request->validate([
             "nama" => "required",
@@ -28,7 +28,6 @@ class AksesorisPakaianController extends Controller
             "desc" => "required",
             "harga" => "required",
         ]);
-
         AksesorisPakaian::create($validatedData);
         return redirect("dashboard")->with("success", "Tambah data berhasil");
     }
@@ -62,8 +61,7 @@ class AksesorisPakaianController extends Controller
 
     public function destroy($id)
     {
-        $data = AksesorisPakaian::where("id", $id)->first();
-        AksesorisPakaian::destroy($data);
-        return redirect("dashboard")->with("success", "Your posts has been deleted");
+        AksesorisPakaian::where("id", $id)->delete();
+        return redirect("dashboard")->with("success", "Tambah barhasil di hapus");
     }
 }

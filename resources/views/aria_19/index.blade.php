@@ -50,9 +50,9 @@
                                     <a href="{{ url("dashboard/$datasatuan->id") }}" class="btn btn-info">Detail</a>
                                     <a href="{{ url("dashboard/$datasatuan->id/edit") }}" class="btn btn-warning mx-2">Edit</a>
                                     <form action="{{ url("dashboard/$datasatuan->id") }}" class="d-inline" method="post">
-                                        @csrf
+                                        @csrf   
                                         @method("delete")
-                                        <button onclick="return confirm('Konfirmasi Hapus')" class="btn btn-danger border-0">Delete</button>
+                                        <button type="submit" onclick="return confirm('Konfirmasi Hapus')" class="btn btn-danger border-0">Delete</button>
                                     </form>
                                 </td>
                             </tr>
