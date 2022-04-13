@@ -4,16 +4,19 @@
 
     Catatan, lengkapi data diri anda berikut ini
     
-    NIM     : 
-    Nama    : 
+    NIM     : 2041720115
+    Nama    : Aliyya Putri Setiyomadani
     Kelas   : TI 2F
-    Nama sesuai folder controller : 
+    Nama sesuai folder controller : aliyya_22
     
 */
 
-//use App\Http\Controllers\nama_no\NamaController;
+use App\Http\Controllers\aliyya_22\MotorController;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
 // silahkan tulis code router dibawah ini 
+route::resource('motor', MotorController::class);
+
+route::get('search', [MotorController::class, 'search'])->name('search');
