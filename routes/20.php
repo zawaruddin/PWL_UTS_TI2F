@@ -4,8 +4,8 @@
 
     Catatan, lengkapi data diri anda berikut ini
     
-    NIM     : 
-    Nama    : 
+    NIM     : 2041720056
+    Nama    : Yaldika Putra Sinaga
     Kelas   : TI 2F
     Nama sesuai folder controller : 
     
