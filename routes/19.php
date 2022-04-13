@@ -4,16 +4,16 @@
 
     Catatan, lengkapi data diri anda berikut ini
     
-    NIM     : 
-    Nama    : 
+    NIM     : 2041720112
+    Nama    : Aria Pratama Effendi
     Kelas   : TI 2F
     Nama sesuai folder controller : 
     
 */
 
-//use App\Http\Controllers\nama_no\NamaController;
-
-use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Models\aria_19\AksesorisPakaian;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\aria_19\AksesorisPakaianController;
 
-// silahkan tulis code router dibawah ini 
+Route::resource("dashboard", AksesorisPakaianController::class);  
