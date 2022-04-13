@@ -103,7 +103,7 @@ Class LaptopController extends Controller
     }
 
     public function search(Request $request){
-        $keyword = $request -> cari;
+        $keyword = $request -> search;
         $laptops = Laptop::where('merk','like','%'. $keyword . '%')
             ->orWhere('harga', 'like', '%' .$keyword. '%')
             ->orWhere('os', 'like', '%' .$keyword. '%')
