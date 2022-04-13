@@ -4,10 +4,10 @@
 
     Catatan, lengkapi data diri anda berikut ini
     
-    NIM     : 
-    Nama    : 
+    NIM     : 2041720226
+    Nama    : Windo Arya Rizki R
     Kelas   : TI 2F
-    Nama sesuai folder controller : 
+    Nama sesuai folder controller : windo_03
     
 */
 
@@ -15,5 +15,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\windo_03\SekolahController;
 
 // silahkan tulis code router dibawah ini 
+Route::resource('sekolah', SekolahController::class);
