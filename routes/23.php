@@ -4,8 +4,8 @@
 
     Catatan, lengkapi data diri anda berikut ini
     
-    NIM     : 
-    Nama    : 
+    NIM     : 2041720124 
+    Nama    : Wazir Qorni Abud
     Kelas   : TI 2F
     Nama sesuai folder controller : 
     
