@@ -1,16 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LemariEsController;
+use App\Http\Controllers\aldi_07\KendaraanUmumController;
 use Illuminate\Http\Request;
+use App\Models\aldi_07\KendaraanUmum;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
+// silahkan tulis code router dibawah ini
+
+Route::resource('aldi_07', KendaraanUmumController::class);

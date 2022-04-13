@@ -4,10 +4,10 @@
 
     Catatan, lengkapi data diri anda berikut ini
     
-    NIM     : 
-    Nama    : 
+    NIM     : 2041720011
+    Nama    : Aldi Dwi Kusuma
     Kelas   : TI 2F
-    Nama sesuai folder controller : 
+    Nama sesuai folder controller : aldi_07
     
 */
 
@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
 // silahkan tulis code router dibawah ini 
+//Route::resource('aldi_07', KendaraanUmumController::class);
