@@ -18,7 +18,7 @@
                     </ul>
                 </div>
             @endif
-            <form method="post" action="{{ route('mahasiswas.store') }}" id="myForm">
+            <form method="post" action="{{ route('sekolah.store') }}" id="myForm">
             @csrf
             <div class="form-group">
                 <label for="NPSN">NPSN</label> 

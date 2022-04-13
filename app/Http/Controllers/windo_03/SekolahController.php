@@ -16,7 +16,7 @@ class SekolahController extends Controller
     {
         $sekolah = Sekolah::all();
         $posts = Sekolah::orderBy('NPSN')->paginate(6);
-        return view('sekolah.index', compact('sekolah'));
+        return view('windo_03.index', compact('sekolah'));
         with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -27,7 +27,7 @@ class SekolahController extends Controller
      */
     public function create()
     {
-        return view('mahasiswas.create');
+        return view('wind0_03.create');
     }
 
     /**
@@ -45,7 +45,7 @@ class SekolahController extends Controller
             'no_telepon' => 'required',
         ]);
         Sekolah::create($request->all());
-        return redirect()->route('sekolah.index')
+        return redirect()->route('windo_03.index')
             ->with('success', 'Data Sekolah Berhasil Ditambahkan');
     }
 
@@ -58,7 +58,7 @@ class SekolahController extends Controller
     public function show($NPSN)
     {
         $sekolah = Sekolah::find($NPSN);
-        return view('sekolah.detail', compact('Sekolah'));
+        return view('windo_03.detail', compact('Sekolah'));
     }
 
     /**
@@ -70,7 +70,7 @@ class SekolahController extends Controller
     public function edit($NPSN)
     {
         $Sekolah = Sekolah::find($NPSN);
-        return view('sekolah.edit', compact('Sekolah'));
+        return view('windo_03.edit', compact('Sekolah'));
     }
 
     /**
@@ -89,7 +89,7 @@ class SekolahController extends Controller
             'no_telepon' => 'required',
         ]);
         Sekolah::find($NPSN)->update($request->all());
-        return redirect()->route('sekolah.index')
+        return redirect()->route('windo_03.index')
             ->with('success', 'Data Sekolah Berhasil Diupdate');
     }
 
@@ -102,7 +102,7 @@ class SekolahController extends Controller
     public function destroy($NPSN)
     {
         Sekolah::find($NPSN)->delete();
-        return redirect()->route('sekolah.index')
+        return redirect()->route('windo_03.index')
             -> with('success', 'Data Sekolah Berhasil Dihapus');
 
     }
