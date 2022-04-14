@@ -18,7 +18,7 @@ class Tv extends Migration
             $table->string('merk', 20);
             $table->string('jenis', 25);
             $table->string('ukuran', 10);
-            $table->string('warna', 10);
+            $table->string('warna', 15);
             $table->string('harga');
             $table->string('gambar');
             $table->timestamps();
