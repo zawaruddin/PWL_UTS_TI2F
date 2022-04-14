@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\nisa_17;
 
 use Illuminate\Http\Request;
-use App\Models\Tv;
-use DB;
+use App\Models\nisa_17\Tv;
+use Illuminate\Support\Facades\DB;
 
 class TvController extends Controller
 {
@@ -84,7 +84,7 @@ class TvController extends Controller
      */
     public function update(Request $request, Tv $tv)
     {
-        $data->validate([
+        $tv->validate([
             'merk' => 'required',
             'jenis' => 'required',
             'ujuran' => 'required',
@@ -92,7 +92,7 @@ class TvController extends Controller
             'harga' => 'required',
         ]);
         
-        Tv::where('id', $tv->id)->update($data);
+        Tv::where('id', $tv->id)->update($tv);
         return redirect()->route('nisa_17.index')
         ->with('success', 'Data Berhasil DiUpdate');
     }

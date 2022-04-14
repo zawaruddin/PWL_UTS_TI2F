@@ -7,7 +7,7 @@
             <h2>Tampilan Data TV</h2>
         </div>
         <div class="float-right my-2">
-            <a class="btn btn-success" href="{{ route('tv.create') }}"> Input Data</a>
+            <a class="btn btn-success" href="{{ route('nisa_17.create') }}"> Input Data</a>
         </div>
     </div>
 </div>
@@ -38,9 +38,9 @@
         <td>{{ $t ->harga }}</td>
         <td>{{ $t ->gambar }}</td>
         <td>
-            <form action="{{ route('tv.destroy',['tv'=>$mhs->id]) }}" method="POST">
-                <a class="btn btn-info" href="{{ route('tv.show',$t->id) }}">Show</a>
-                <a class="btn btn-primary" href="{{ route('tv.edit',$t->id) }}">Edit</a>
+            <form action="{{ route('nisa_17.destroy',['tv'=>$mhs->id]) }}" method="POST">
+                <a class="btn btn-info" href="{{ route('nisa_17.show',$t->id) }}">Show</a>
+                <a class="btn btn-primary" href="{{ route('nisa_17.edit',$t->id) }}">Edit</a>
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="btn btn-danger">Delete</button>

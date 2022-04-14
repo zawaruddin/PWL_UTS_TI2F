@@ -4,18 +4,16 @@
 
     Catatan, lengkapi data diri anda berikut ini
     
-    NIM     : 2041720188
-    Nama    : Khairun Nisa
+    NIM     : 
+    Nama    : 
     Kelas   : TI 2F
-    Nama sesuai folder controller : nisa_17
+    Nama sesuai folder controller : 
     
 */
 
 //use App\Http\Controllers\nama_no\NamaController;
 
-use App\Http\Controllers\TvController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
 // silahkan tulis code router dibawah ini 
-Route::resource('tv', TvController::class);

@@ -17,7 +17,7 @@
                 </div>
                 //
                 @endif
-                <form method="post" action="{{ route('tv.store') }}" id="myForm">
+                <form method="post" action="{{ route('nisa_17.store') }}" id="myForm">
                     @csrf
                     <div class="form-group">
                         <label for="Merk">Merk</label>
